@@ -19,7 +19,7 @@ X_scaled_array = scaler.transform(X)
 X_scaled = pd.DataFrame(X_scaled_array, columns = X.columns)
 
 # Set clusters to KMean then fit the data
-nclusters = 2 # this is the k in kmeans
+nclusters = 3 # this is the k in kmeans
 km = KMeans(n_clusters=nclusters)
 km.fit(X_scaled)
 
